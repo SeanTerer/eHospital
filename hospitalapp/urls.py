@@ -31,4 +31,11 @@ urlpatterns = [
     path('', views.register, name='register'),
 
     path('login/', views.login_user, name='login'),
+
+    #Mpesa urls
+    path('pay/', views.pay, name='pay'),
+    path('stk/', views.stk, name='stk'),
+    path('token/', views.token, name='token'),
+    path('transactions/', views.transactions_list, name='transactions'),
+
 ]
